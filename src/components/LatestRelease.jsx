@@ -2,8 +2,8 @@ import React from "react";
 import Player from "./Player";
 const LatestRelease = () => {
   return (
-    <div className="h-[100vh]">
-      <div className="h-full flex flex-row items-center">
+    <div className="h-[100vh] ">
+      <div className="h-full flex flex-row items-center justify-evenly">
         <div className="w-[50%] flex justify-center">
           <Player />
         </div>
@@ -25,7 +25,7 @@ const LatestRelease = () => {
           </p>
         </div>
       </div>
-      <div className="mx-3 border-b-2 border-alt1"></div>
+      <div className="mx-3 w-full border-b-2 border-light"></div>
     </div>
   );
 };
