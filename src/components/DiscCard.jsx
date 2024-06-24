@@ -5,7 +5,7 @@ import foc from "../../public/assets/covers/img1.png";
 const DiscCard = ({ className }) => {
   return (
     <div
-      className={`bg-alt2 w-[33%] flex flex-col items-center justify-evenly ${className}`}
+      className={`bg-alt2 w-[31%] flex flex-col items-center justify-evenly ${className}`}
     >
       <Image src={foc} alt="failures of creation" className="w-[100%]" />
     </div>

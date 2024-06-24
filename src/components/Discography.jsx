@@ -8,7 +8,8 @@ const Discography = () => {
         <h2 className="text-4xl  mt-10">Discography</h2>
         <div className="mt-3 w-[100px] border-b-2 border-light"></div>
       </div>
-      <div className="my-[100px] flex flex-wrap">
+      <div className="my-[100px] flex justify-center flex-wrap">
+        <DiscCard className="m-1" />
         <DiscCard className="m-1" />
         <DiscCard className="m-1" />
         <DiscCard className="m-1" />
