@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="w-[500px] h-[400px] border-2 border-light mr-[-100px]">
           Contact
         </div>
-        <div className="w-[800px] h-[500px] border-2 border-alt1">Fiverr</div>
+        <div className="w-[800px] h-[500px] border-2 border-alt1"></div>
       </div>
     </div>
   );
