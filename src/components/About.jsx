@@ -8,7 +8,7 @@ const About = () => {
         <h2 className="text-4xl  mt-10">About</h2>
         <div className="mt-3 w-[50px] border-b-2 border-light"></div>
       </div>
-      <div className="flex flex-row justify-between my-[40px]">
+      <div className="flex flex-row justify-between my-[20px]">
         <div className="w-[54%] text-light text-justify px-3 text-xl flex flex-col justify-center">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
@@ -27,7 +27,7 @@ const About = () => {
             adipisci numquam distinctio. Saepe, blanditiis similique.
           </p>
         </div>
-        <div className="w-[40%] flex justify-center">
+        <div className="w-[35%] flex justify-center">
           <Image src={Me} className="w-full" />
         </div>
       </div>

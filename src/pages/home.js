@@ -4,6 +4,7 @@ import LatestRelease from "@/components/LatestRelease";
 import About from "@/components/About";
 import React from "react";
 import Discography from "@/components/Discography";
+import Contact from "@/components/Contact";
 
 const home = () => {
   return (
@@ -12,6 +13,7 @@ const home = () => {
       <LatestRelease />
       <Discography />
       <About />
+      <Contact />
       <Footer />
     </div>
   );
