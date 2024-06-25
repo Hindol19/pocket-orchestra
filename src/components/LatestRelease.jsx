@@ -25,7 +25,7 @@ const LatestRelease = () => {
           </p>
         </div>
       </div>
-      <div className="mx-3 w-full border-b-2 border-light"></div>
+      <div className="w-full border-b-2 border-light mx-auto"></div>
     </div>
   );
 };

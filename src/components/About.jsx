@@ -31,7 +31,7 @@ const About = () => {
           <Image src={Me} className="w-full" />
         </div>
       </div>
-      <div className="mx-3 mt-[80px] w-full border-b-2 border-light"></div>
+      <div className=" mt-[80px] w-full border-b-2 border-light mx-auto"></div>
     </div>
   );
 };
