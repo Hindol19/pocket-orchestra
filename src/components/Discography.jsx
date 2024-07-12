@@ -29,7 +29,7 @@ const Discography = () => {
       </div>
       <div className="my-[100px] flex justify-center flex-wrap">
         {tracks.map((item) => (
-          <DiscCard />
+          <DiscCard className="" track={item.track} cover={item.cover} />
         ))}
       </div>
 
