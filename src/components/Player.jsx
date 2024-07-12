@@ -1,7 +1,7 @@
 import React from "react";
 // import track from "../../public/assets/tracks/failures_of_creation.mp3";
 import Image from "next/image";
-import foc from "../../public/assets/covers/img1.png";
+import foc from "../../public/assets/covers/failures_of_creation.png";
 const Player = () => {
   return (
     <div className="bg-alt2 h-[470px] w-[400px] flex flex-col items-center justify-evenly">

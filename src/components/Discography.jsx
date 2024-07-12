@@ -1,6 +1,12 @@
 import React from "react";
 import DiscCard from "./DiscCard";
 
+const tracks = [
+  {
+    cover: "/assets/covers/failures_of_creation.png",
+  },
+];
+
 const Discography = () => {
   return (
     <div className="w-full flex flex-col">

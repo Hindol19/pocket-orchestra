@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 // import track from "../../public/assets/tracks/failures_of_creation.mp3";
 import Image from "next/image";
 
-import foc from "../../public/assets/covers/img1.png";
+// import foc from "../../public/assets/covers/img1.png";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import PauseCircleOutlineIcon from "@mui/icons-material/PauseCircleOutline";
 
@@ -92,9 +92,9 @@ const DiscCard = ({ className }) => {
       onMouseEnter={hideCover}
       onMouseLeave={showCover}
     >
-      <Image
-        src={foc}
-        alt="failures of creation"
+      <img
+        src="/assets/covers/failures_of_creation.png"
+        alt="failures_of_creation.png"
         className={`w-[100%] ${isCoverHidden}`}
       />
       <div
