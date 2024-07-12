@@ -49,7 +49,7 @@ const Slider = ({ percentage = 0, onChange }) => {
   );
 };
 
-const DiscCard = ({ className }) => {
+const DiscCard = ({ className, cover, track }) => {
   const [isCoverHidden, setIsCoverHidden] = useState("");
   const [isPlayerHidden, setIsPlayerHidden] = useState("hidden");
   const [isPlayed, setIsPlayed] = useState(false);
@@ -73,7 +73,7 @@ const DiscCard = ({ className }) => {
   };
 
   useEffect(() => {
-    setAudio(new Audio("/assets/tracks/failures_of_creation.mp3"));
+    setAudio(new Audio(track));
   }, []);
 
   const playTrack = () => {
@@ -88,15 +88,11 @@ const DiscCard = ({ className }) => {
 
   return (
     <div
-      className={`bg-dark w-[31%] flex flex-col items-center justify-evenly ${className}`}
+      className={`bg-dark w-[31%] flex flex-col items-center justify-evenly m-1 ${className}`}
       onMouseEnter={hideCover}
       onMouseLeave={showCover}
     >
-      <img
-        src="/assets/covers/failures_of_creation.png"
-        alt="failures_of_creation.png"
-        className={`w-[100%] ${isCoverHidden}`}
-      />
+      <img src={cover} alt={cover} className={`w-[100%] ${isCoverHidden}`} />
       <div
         className={`absolute w-[27%] h-[36%] flex flex-col items-center justify-evenly ${isPlayerHidden}`}
       >

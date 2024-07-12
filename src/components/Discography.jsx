@@ -4,6 +4,19 @@ import DiscCard from "./DiscCard";
 const tracks = [
   {
     cover: "/assets/covers/failures_of_creation.png",
+    track: "/assets/tracks/failures_of_creation.mp3",
+  },
+  {
+    cover: "/assets/covers/broken_lamps.jpg",
+    track: "/assets/tracks/broken_lamps.mp3",
+  },
+  {
+    cover: "/assets/covers/itenis_theme.jpg",
+    track: "/assets/tracks/itenis_theme.mp3",
+  },
+  {
+    cover: "/assets/covers/nightmare_experiment.jpg",
+    track: "/assets/tracks/nightmare_experiment.mp3",
   },
 ];
 
@@ -15,12 +28,9 @@ const Discography = () => {
         <div className="mt-3 w-[100px] border-b-2 border-light"></div>
       </div>
       <div className="my-[100px] flex justify-center flex-wrap">
-        <DiscCard className="m-1" />
-        <DiscCard className="m-1" />
-        <DiscCard className="m-1" />
-        <DiscCard className="m-1" />
-        <DiscCard className="m-1" />
-        <DiscCard className="m-1" />
+        {tracks.map((item) => (
+          <DiscCard />
+        ))}
       </div>
 
       <div className=" mt-[80px] w-full border-b-2 border-light mx-auto"></div>
