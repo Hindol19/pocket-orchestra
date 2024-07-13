@@ -28,7 +28,7 @@ const Slider = ({ percentage = 0, onChange }) => {
   }, [percentage]);
 
   return (
-    <div className="relative w-full flex justify-center">
+    <div className="relative w-full flex justify-center ">
       <div
         className="thumb"
         ref={thumbRef}
@@ -42,7 +42,7 @@ const Slider = ({ percentage = 0, onChange }) => {
         value={position}
         ref={rangeRef}
         step="0.01"
-        className="range w-[75%]"
+        className="range w-[75%] cursor-pointer"
         onChange={onChange}
       />
     </div>
@@ -97,9 +97,15 @@ const DiscCard = ({ className, cover, track }) => {
         className={`absolute w-[27%] h-[36%] flex flex-col items-center justify-evenly ${isPlayerHidden}`}
       >
         {!isPlayed ? (
-          <PlayCircleOutlineIcon onClick={playTrack} className="text-[96px]" />
+          <PlayCircleOutlineIcon
+            onClick={playTrack}
+            className="text-[96px] cursor-pointer hover:text-alt1"
+          />
         ) : (
-          <PauseCircleOutlineIcon onClick={playTrack} className="text-[96px]" />
+          <PauseCircleOutlineIcon
+            onClick={playTrack}
+            className="text-[96px] cursor-pointer hover:text-alt1"
+          />
         )}
         <Slider percentage={percentage} onChange={handleSlider} />
       </div>
